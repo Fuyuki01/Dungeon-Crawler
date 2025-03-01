@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module DungeonCrawler</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">DungeonCrawler</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/Users/onurbulut/Library/Mobile%20Documents/com~apple~CloudDocs/Game/DungeonCrawler.py">/Users/onurbulut/Library/Mobile Documents/com~apple~CloudDocs/Game/DungeonCrawler.py</a></td></tr></table>
+    <p><span class="code">File&nbsp;name:&nbsp;DungeonCrawler.py<br>
+Author:&nbsp;Onur&nbsp;Ishak&nbsp;Bulut<br>
+Date&nbsp;created:&nbsp;10/01/2025<br>
+Date&nbsp;last&nbsp;modified:&nbsp;27/01/2025<br>
+Python&nbsp;Version:3.3</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pygame.html">pygame</a><br>
+</td><td class="multicolumn"><a href="random.html">random</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="DungeonCrawler.html#Armor">Armor</a>
+</dt><dt class="heading-text"><a href="DungeonCrawler.html#Map">Map</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Armor">class <strong>Armor</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Armor">Armor</a>(name,&nbsp;armor_type,&nbsp;sprite)<br>
+&nbsp;<br>
+#&nbsp;<a href="#Armor">Armor</a>&nbsp;class<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Armor-__init__"><strong>__init__</strong></a>(self, name, armor_type, sprite)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Map">class <strong>Map</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">#&nbsp;Dungeon&nbsp;Generator<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Map-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Map-create_corridor"><strong>create_corridor</strong></a>(self, x1, y1, x2, y2)</dt></dl>
+
+<dl><dt><a name="Map-makeMap"><strong>makeMap</strong></a>(self, xsize, ysize, fail, b1, mrooms)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-check_level_up"><strong>check_level_up</strong></a>()</dt><dd><span class="code">#&nbsp;Checking&nbsp;the&nbsp;level&nbsp;up&nbsp;state</span></dd></dl>
+ <dl><dt><a name="-draw_map"><strong>draw_map</strong></a>()</dt><dd><span class="code">#&nbsp;Drawing&nbsp;the&nbsp;randomized&nbsp;map</span></dd></dl>
+ <dl><dt><a name="-draw_objects"><strong>draw_objects</strong></a>()</dt><dd><span class="code">#&nbsp;Drawing&nbsp;chest&nbsp;and&nbsp;enemies</span></dd></dl>
+ <dl><dt><a name="-draw_potion_selection"><strong>draw_potion_selection</strong></a>()</dt><dd><span class="code">#&nbsp;Drawing&nbsp;the&nbsp;potion&nbsp;menu</span></dd></dl>
+ <dl><dt><a name="-draw_status_window"><strong>draw_status_window</strong></a>()</dt><dd><span class="code">#&nbsp;Drawing&nbsp;the&nbsp;inventory</span></dd></dl>
+ <dl><dt><a name="-draw_ui"><strong>draw_ui</strong></a>()</dt><dd><span class="code">#&nbsp;Drawing&nbsp;User&nbsp;Interface</span></dd></dl>
+ <dl><dt><a name="-draw_warg_health_bar"><strong>draw_warg_health_bar</strong></a>()</dt><dd><span class="code">#&nbsp;Drawing&nbsp;the&nbsp;warg&nbsp;health&nbsp;bar</span></dd></dl>
+ <dl><dt><a name="-game_over_screen"><strong>game_over_screen</strong></a>()</dt><dd><span class="code">#&nbsp;Game&nbsp;over&nbsp;screen&nbsp;initialization</span></dd></dl>
+ <dl><dt><a name="-generate_enemies"><strong>generate_enemies</strong></a>(num_objects)</dt><dd><span class="code">#&nbsp;Generating&nbsp;random&nbsp;enemies</span></dd></dl>
+ <dl><dt><a name="-generate_new_level"><strong>generate_new_level</strong></a>()</dt><dd><span class="code">#&nbsp;Generating&nbsp;the&nbsp;new&nbsp;level&nbsp;of&nbsp;the&nbsp;dungeon</span></dd></dl>
+ <dl><dt><a name="-generate_treasures"><strong>generate_treasures</strong></a>(num_objects)</dt><dd><span class="code">#&nbsp;Generating&nbsp;random&nbsp;treasures</span></dd></dl>
+ <dl><dt><a name="-handle_attack"><strong>handle_attack</strong></a>(enemy, dx, dy)</dt><dd><span class="code">#&nbsp;Attack&nbsp;state&nbsp;Handler</span></dd></dl>
+ <dl><dt><a name="-handle_enemy_animations"><strong>handle_enemy_animations</strong></a>()</dt><dd><span class="code">#&nbsp;Enemy&nbsp;animations</span></dd></dl>
+ <dl><dt><a name="-handle_interaction"><strong>handle_interaction</strong></a>()</dt><dd><span class="code">#&nbsp;Handling&nbsp;the&nbsp;chest&nbsp;interaction</span></dd></dl>
+ <dl><dt><a name="-handle_movement"><strong>handle_movement</strong></a>(event)</dt><dd><span class="code">#&nbsp;Handling&nbsp;the&nbsp;movement</span></dd></dl>
+ <dl><dt><a name="-handle_player_animation"><strong>handle_player_animation</strong></a>()</dt><dd><span class="code">#&nbsp;Player&nbsp;animation&nbsp;for&nbsp;attacking</span></dd></dl>
+ <dl><dt><a name="-handle_player_damage_animation"><strong>handle_player_damage_animation</strong></a>()</dt><dd><span class="code">#&nbsp;Player&nbsp;animation&nbsp;for&nbsp;the&nbsp;getting&nbsp;damaged</span></dd></dl>
+ <dl><dt><a name="-handle_player_input"><strong>handle_player_input</strong></a>(event)</dt><dd><span class="code">#&nbsp;Handling&nbsp;the&nbsp;player&nbsp;inputs</span></dd></dl>
+ <dl><dt><a name="-handle_player_move"><strong>handle_player_move</strong></a>(new_x, new_y, dx, dy)</dt><dd><span class="code">#&nbsp;Handling&nbsp;the&nbsp;player&nbsp;interactions</span></dd></dl>
+ <dl><dt><a name="-handle_potion_use"><strong>handle_potion_use</strong></a>(key)</dt><dd><span class="code">#&nbsp;Potion&nbsp;usage&nbsp;handler</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">#&nbsp;Main&nbsp;function</span></dd></dl>
+ <dl><dt><a name="-main_menu"><strong>main_menu</strong></a>()</dt><dd><span class="code">#&nbsp;Main&nbsp;menu&nbsp;screen&nbsp;initialization</span></dd></dl>
+ <dl><dt><a name="-move_enemies"><strong>move_enemies</strong></a>()</dt></dl>
+ <dl><dt><a name="-options_menu"><strong>options_menu</strong></a>()</dt><dd><span class="code">#&nbsp;Options&nbsp;menu&nbsp;initialization</span></dd></dl>
+ <dl><dt><a name="-restart_game"><strong>restart_game</strong></a>()</dt><dd><span class="code">#&nbsp;Restarting&nbsp;the&nbsp;game&nbsp;from&nbsp;the&nbsp;begining</span></dd></dl>
+ <dl><dt><a name="-reveal_area"><strong>reveal_area</strong></a>(x, y)</dt><dd><span class="code">#&nbsp;Fog&nbsp;of&nbsp;war</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>BASE_ENEMY_DAMAGE_INCREMENT</strong> = 1<br>
+<strong>BASE_ENEMY_HEALTH_MULTIPLIER</strong> = 1<br>
+<strong>BLACK</strong> = (0, 0, 0)<br>
+<strong>BLUE</strong> = (0, 0, 255)<br>
+<strong>DARK_GRAY</strong> = (50, 50, 50)<br>
+<strong>ENEMY_TYPES</strong> = {'goblin': {'color': (255, 0, 0), 'damage': 3, 'health': 10, 'speed': 1}, 'slime': {'color': (0, 0, 255), 'damage': 5, 'health': 5, 'speed': 1}, 'warg': {'color': (128, 0, 128), 'damage': 15, 'health': 100, 'speed': 2}}<br>
+<strong>FONT_PATH</strong> = 'MinimalPixelFont.ttf'<br>
+<strong>GRAY</strong> = (100, 100, 100)<br>
+<strong>GREEN</strong> = (0, 255, 0)<br>
+<strong>GRID_HEIGHT</strong> = 18<br>
+<strong>GRID_WIDTH</strong> = 37<br>
+<strong>MIN_ENEMY_DAMAGE</strong> = 1<br>
+<strong>POTION_WEIGHTS</strong> = {'large': 10, 'medium': 30, 'small': 60}<br>
+<strong>RED</strong> = (255, 0, 0)<br>
+<strong>SCREEN_HEIGHT</strong> = 600<br>
+<strong>SCREEN_WIDTH</strong> = 1200<br>
+<strong>SPRITE_OFFSET_X</strong> = 32<br>
+<strong>SPRITE_OFFSET_Y</strong> = 32<br>
+<strong>TILE_SIZE</strong> = 32<br>
+<strong>WHITE</strong> = (255, 255, 255)<br>
+<strong>attack_right_sprites</strong> = [&lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;]<br>
+<strong>clock</strong> = &lt;Clock(fps=0.00)&gt;<br>
+<strong>closed_chest</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>current_level</strong> = 1<br>
+<strong>empty_boots</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>empty_chestplate</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>empty_helmet</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>empty_leggings</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>enemies</strong> = [{'animation_state': 'alive', 'color': (0, 0, 255), 'current_frame': 0, 'damage': 5, 'facing': 'right', 'frame_counter': 0, 'health': 5, 'speed': 1, 'type': 'slime', 'x': 8, ...}, {'animation_state': 'alive', 'color': (255, 0, 0), 'current_frame': 0, 'damage': 3, 'facing': 'right', 'frame_counter': 0, 'health': 10, 'speed': 1, 'type': 'goblin', 'x': 23, ...}, {'animation_state': 'alive', 'color': (255, 0, 0), 'current_frame': 0, 'damage': 3, 'facing': 'right', 'frame_counter': 0, 'health': 10, 'speed': 1, 'type': 'goblin', 'x': 7, ...}, {'animation_state': 'alive', 'color': (0, 0, 255), 'current_frame': 0, 'damage': 5, 'facing': 'right', 'frame_counter': 0, 'health': 5, 'speed': 1, 'type': 'slime', 'x': 12, ...}, {'animation_state': 'alive', 'color': (0, 0, 255), 'current_frame': 0, 'damage': 5, 'facing': 'right', 'frame_counter': 0, 'health': 5, 'speed': 1, 'type': 'slime', 'x': 25, ...}, {'animation_state': 'alive', 'color': (255, 0, 0), 'current_frame': 0, 'damage': 3, 'facing': 'right', 'frame_counter': 0, 'health': 10, 'speed': 1, 'type': 'goblin', 'x': 3, ...}]<br>
+<strong>first_room</strong> = [13, 10, 21, 4]<br>
+<strong>floor_tileset</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>game_state</strong> = 'player_turn'<br>
+<strong>goblin_attack_sprites</strong> = [&lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;]<br>
+<strong>goblin_damage_frames</strong> = [&lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;]<br>
+<strong>goblin_death_frames</strong> = [&lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;]<br>
+<strong>goblin_sprite</strong> = &lt;Surface(96x96x32 SW)&gt;<br>
+<strong>large_potion_sprite</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>log</strong> = []<br>
+<strong>map_data</strong> = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...], [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, ...], [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, ...], [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...], [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, ...], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, ...], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, ...], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 1, 1, 1, ...], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, ...], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, ...], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...]]<br>
+<strong>medium_potion_sprite</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>open_chest</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>player_animation_state</strong> = 'idle'<br>
+<strong>player_current_frame</strong> = 0<br>
+<strong>player_damage_frames</strong> = [&lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;]<br>
+<strong>player_direction</strong> = 'right'<br>
+<strong>player_frame_counter</strong> = 0<br>
+<strong>player_level</strong> = 1<br>
+<strong>player_pos</strong> = [27, 9]<br>
+<strong>player_sprite</strong> = &lt;Surface(96x96x32 SW)&gt;<br>
+<strong>player_xp</strong> = 0<br>
+<strong>potion_sprites</strong> = {'large': &lt;Surface(32x32x32 SW)&gt;, 'medium': &lt;Surface(32x32x32 SW)&gt;, 'small': &lt;Surface(32x32x32 SW)&gt;}<br>
+<strong>screen</strong> = &lt;Surface(1200x600x32 SW)&gt;<br>
+<strong>slime_attack_sprites</strong> = [&lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;]<br>
+<strong>slime_death_frames</strong> = [&lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;]<br>
+<strong>slime_sprite</strong> = &lt;Surface(96x96x32 SW)&gt;<br>
+<strong>small_potion_sprite</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>stair_tileset</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>staircase_pos</strong> = (10, 10)<br>
+<strong>stat_points</strong> = 0<br>
+<strong>strength</strong> = 1<br>
+<strong>themap</strong> = &lt;DungeonCrawler.Map object&gt;<br>
+<strong>treasures</strong> = [{'direction': 'west', 'state': 'closed', 'x': 15, 'y': 7}, {'direction': 'west', 'state': 'closed', 'x': 16, 'y': 8}, {'direction': 'west', 'state': 'closed', 'x': 16, 'y': 12}]<br>
+<strong>visibility</strong> = [[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...], [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, ...]]<br>
+<strong>vitality</strong> = 1<br>
+<strong>wall_tileset</strong> = &lt;Surface(32x32x32 SW)&gt;<br>
+<strong>warg_attack_sprites</strong> = [&lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;]<br>
+<strong>warg_damage_frames</strong> = [&lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;, &lt;Surface(96x96x32 SW)&gt;]<br>
+<strong>warg_sprite</strong> = &lt;Surface(96x96x32 SW)&gt;<br>
+<strong>xp_for_next_level</strong> = 10</td></tr></table>
+</body></html>
