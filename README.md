@@ -1,6 +1,6 @@
 # Dungeon Crawler
 
-A pixel-art, turn-based rogue-like game developed using **Python** and **Pygame**
+A pixel-art, turn-based rogue-like game developed using **Pygame**
 
 ---
 
