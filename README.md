@@ -6,7 +6,7 @@ A pixel-art, turn-based rogue-like game developed using **Pygame**
 
 ## Game Overview
 
-Dungeon Crawler is an old-school 2D dungeon adventure inspired by classic rogue-like mechanics:
+An old-school 2D Dungeon Crawler game inspired by classic rogue-like mechanics 
 
 - Procedurally generated dungeon maps
 - Fog of war and visibility system
